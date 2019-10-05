@@ -6,7 +6,7 @@ plugins {
 group 'something'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.10
 
 repositories {
     //替换为阿里云maven仓库
@@ -36,6 +36,9 @@ dependencies {
     compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.17.Final'
     // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator-annotation-processor
     compile group: 'org.hibernate.validator', name: 'hibernate-validator-annotation-processor', version: '6.0.17.Final'
+    // https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+
 
 
 }

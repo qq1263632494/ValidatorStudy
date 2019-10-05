@@ -13,7 +13,9 @@
   </head>
   <body>
   <div class="container">
-    <a href="${pageContext.request.contextPath}/registerForm">校验测试</a>
+    <a href="${pageContext.request.contextPath}/registerForm">校验测试</a><br>
+    <a href="${pageContext.request.contextPath}/uploadForm">上传测试</a><br>
+    <a href="${pageContext.request.contextPath}/download?filename=评分标准.docx">下载测试</a><br>
   </div>
   </body>
 </html>

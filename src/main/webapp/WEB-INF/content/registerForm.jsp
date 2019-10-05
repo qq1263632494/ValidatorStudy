@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: wang
-  Date: 2019/11/5
-  Time: 上午11:51
+  Date: 2019/10/5
+  Time: 上午10:51
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -27,52 +27,52 @@
     <h3>注册页面</h3>
     <form:form modelAttribute="user" method="post" action="login" cssClass="form-horizontal">
         <div class="form-group">
-            <label for="loginname" class="col-sm-1 control-label">登录名：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="loginname" cssClass="form-control" id="loginname"/>
-                <form:errors path="loginname" cssClass="form-control" cssStyle="color: red"/>
+            <label for="loginname" class="col-sm-2 control-label">登录名：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="loginname" cssClass="form-control" id="loginname" cssStyle="width: 40%"/>
+                <form:errors path="loginname" cssClass="form-control" cssStyle="color: #ffa25b"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="password" class="col-sm-1 control-label">密码：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="password" id="password" cssClass="form-control"/>
-                <form:errors path="password" cssStyle="color: red" cssClass="form-control"/>
+            <label for="password" class="col-sm-2 control-label">密码：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="password" id="password" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="password" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="username" class="col-sm-1 control-label">用户名：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="username" cssClass="form-control"/>
-                <form:errors path="username" cssStyle="color: red" cssClass="form-control"/>
+            <label for="username" class="col-sm-2 control-label">用户名：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="username" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="username" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="age" class="col-sm-1 control-label">年龄：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="age" cssClass="form-control"/>
-                <form:errors path="age" cssStyle="color: red" cssClass="form-control"/>
+            <label for="age" class="col-sm-2 control-label">年龄：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="age" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="age" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="email" class="col-sm-1 control-label">邮箱：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="email" cssClass="form-control"/>
-                <form:errors path="email" cssStyle="color: red" cssClass="form-control"/>
+            <label for="email" class="col-sm-2 control-label">邮箱：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="email" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="email" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="birthDate" class="col-sm-1 control-label">生日：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="birthDate" cssClass="form-control"/>
-                <form:errors path="birthDate" cssStyle="color: red" cssClass="form-control"/>
+            <label for="birthDate" class="col-sm-2 control-label">生日：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="birthDate" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="birthDate" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <div class="form-group">
-            <label for="phone" class="col-sm-1 control-label">电话：</label>
-            <div class="col-sm-11 form-inline">
-                <form:input path="phone" cssClass="form-control"/>
-                <form:errors path="phone" cssStyle="color: red" cssClass="form-control"/>
+            <label for="phone" class="col-sm-2 control-label">电话：</label>
+            <div class="col-sm-10 form-inline">
+                <form:input path="phone" cssClass="form-control" cssStyle="width: 40%"/>
+                <form:errors path="phone" cssStyle="color: #ffa25b" cssClass="form-control"/>
             </div>
         </div>
         <button class="btn btn-primary">提交</button>
