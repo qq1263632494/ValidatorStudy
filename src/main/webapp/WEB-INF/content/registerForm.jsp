@@ -10,16 +10,24 @@
 <html>
 <head>
     <title>测试JSR303</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
     <h3>注册页面</h3>
-    <form:form modelAttribute="user" method="post" action="login">
-        <table>
-            <tr>
-                <td>登录名：</td>
-                <td><form:input path="loginname"/></td>
-                <td><form:errors path="loginname" cssStyle="color: red"/> </td>
-            </tr>
+    <form:form modelAttribute="user" method="post" action="login" cssClass="form-horizontal">
+        <div class="form-group">
+            <label for="loginname">登录名</label>
+            <form:input path="loginname" cssClass="form-control" id="loginname"/>
+            <form:errors path="loginname" cssClass="form-control"/>
+        </div>
+        <table class="table">
             <tr>
                 <td>密码：</td>
                 <td><form:input path="password"/></td>
@@ -55,5 +63,7 @@
             </tr>
         </table>
     </form:form>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">点我弹出/隐藏弹出框</button>
+</div>
 </body>
 </html>

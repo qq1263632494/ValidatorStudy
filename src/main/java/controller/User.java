@@ -12,7 +12,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class User implements Serializable {
-    @NotBlank(message = "登录名不能为空")
+    @NotBlank()
     private String loginname;
     @NotBlank(message = "密码不能为空")
     @Length(min = 6, max = 8, message = "密码长度必须在6位到8位之间")
